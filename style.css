@@ -1,5 +1,5 @@
 :root {
-    --superset-pink: rgb(252, 249, 243);
+    --diego-pink: rgb(252, 249, 243);
     /* --second-color: rgb(38, 42, 44); */
     /* --third-color: rgb(0, 96, 231); */
     --paragraphFontSize: 20px;
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background-color: var(--superset-pink);
+    background-color: var(--diego-pink);
     color: rgb(0, 62, 185);
     text-align: center;
     padding: 0;
@@ -60,7 +60,7 @@ body {
 }
 
 .hoverPath:hover {
-  fill: var(--superset-pink);
+  fill: var(--diego-pink);
 }
 .text1, .text2 {
   color: white;
