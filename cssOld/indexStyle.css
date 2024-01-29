@@ -1,0 +1,260 @@
+#container {
+    width: 100%;
+    max-width: 100vw;
+    margin: auto;
+}
+#nav-box {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    display: block;
+    position: static;
+    padding: 3em 0 2em;
+    margin-top: 0;
+    margin: auto;
+    z-index: 3;    
+}
+#nav {
+    width: auto;
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+.nav-title {
+    display: block;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: center;
+}
+.nav-item {
+    color: var(--dark-gray-color);
+    display: block;
+    padding: .3em 0;
+    text-align: center;
+    transition: all .2s ease;
+}
+#main {
+    width: 800px;
+    max-width: 75vw;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+#main-container {
+    width: 94%;
+    padding: 0 3%;
+    max-width: 75vw;
+    display: block;
+}
+
+
+
+/* FOR SMALL SCREENS */
+@media screen and (max-width:1024px) and (orientation: portrait){
+	:root {
+		--full-height: 480px;
+		--half-height: 240px;
+		--fourth-height: 120px;
+		--sixty-height: 288px;
+		--twenty-height: 96px;
+    
+        --navHeightMobile: 200px;
+    }   
+    html {
+        margin: 0;
+        padding: 0;
+    }
+        
+
+    
+    h3 {
+        margin: 10em auto;
+    }
+    #container {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+     
+    #nav-box-mobile {
+        display: block;
+        width: 100%;
+        height: var(--navHeightMobile);
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        background-color: white;
+        /* border-bottom: 5px solid var(--gray-color); */
+        box-shadow: 0px 16px 40px rgba(0,0,0,.1) ;
+    }
+    .fa-bars {
+        color: black;
+        font-size: 3.3em;
+        float: right;
+        text-decoration: none;
+        margin-top: .65em;        
+        line-height: var(--navHeightMobile);
+    }
+    #nav {
+        width: 90%;
+        height: 100%;
+        margin: 0 5%;
+        display: block;
+        text-align: left;
+        padding: 0;
+    }
+    #avatar {
+        width: 100%;
+        border-radius: 50%;
+    }
+    .nav-title {
+        margin-bottom: 0px;
+        margin-top: .1em;     
+        float: left;
+        line-height: var(--navHeightMobile);
+    }
+    #mobile-menu {
+    }
+    .menu-overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+        height: 0;
+        width: 100vw;
+        position: fixed; /* Stay in place */
+        z-index: 5; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: white;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: all .5s ease;
+      }
+    #mobile-menu-content {
+        position: relative;
+        top: 0; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 20%;
+    }
+    #mobile-menu-close {
+        position: relative;
+        top: 0; /* 25% from the top */
+        width: 100%; /* 100% width */
+        height: 10%;
+        text-align: center; /* Centered text/links */
+    }
+    #mobile-menu-content a, #mobile-menu-content p {           
+        color: black;
+    }
+    #mobile-menu-close .closebtn {
+        position: absolute;
+        top: -.31em;
+        right: .1em;
+        color: var(--gray-color);
+        text-decoration: none;
+    }
+    .fa-bars {
+        z-index: 7;
+        cursor: pointer;
+    }
+    #main {
+        margin-top: var(--navHeightMobile);
+        min-width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+    #main-container {
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+    .project-content h1 {
+        padding-top: 100px;
+    }
+    .project-content p {
+        padding: 5%;
+        line-height: 3em;
+    }
+    
+    
+    #footer {
+        height: 4.4em;
+        margin: 5em 0;
+    }
+
+        
+    #form {
+        width: 85%;
+    }
+    #form textarea, input, #message {
+        border-radius: .1em;
+        font-size: .8em;
+        margin-bottom: .5em;
+        padding: .5em .5em;
+    }
+    #form textarea {
+        height: 5em;
+    }
+    #form button {
+        display: block;
+        padding: .6em 1.2em;
+        border-radius: .2em;
+        font-size: 1.8em;
+    }
+
+    /* /////////////// */
+    /*       GRID      */
+    /* /////////////// */
+    .grid {
+        margin-top: 0em;
+        /* delete this vvv to make them 2 imgs per row */
+        grid-template-columns: 100%;
+    }
+    #grid-div {
+        padding: 0;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    #grid-div::before {
+        content: "";
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 100%;
+    }
+    .grid div img {
+        position: absolute;
+        width: 100%;
+
+        /* Alternate Version */
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    
+        /* top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+    }
+    .half-div-left, .half-div-right {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    #prof {
+        width: 60%;
+        margin: auto;
+    }
+	/* HORIZONTAL SMALL SCREEN */
+    @media (orientation: landscape) {
+        
+      }
+}

@@ -3,31 +3,72 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Diego</title>
-  <meta name="description" content="temp site">
-  <link rel="icon" href="icon.png">
+  <title>Diego Yañez-Laguna</title>
+  <meta name="description" content="portfolio site">
+  <link rel="icon" href="./img/icon.png">
 
   <link rel="stylesheet" href="style.css">
-  <script src="jquery-3.5.1.min.js"></script>
-  <script src="script.js"></script>
-
-  
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/universal.js"></script>
 </head>
 
-<body>
+
+<body onload="index_setup()"> 
+  <div class="transition transition1 is-active"></div>
   
-  <div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>hello, i am currently making my new portfolio, should be ready in a couple days (9/22)..........</p>
-    <br>
-    <br>
-    <br>
-    <a href="http://diego.mit.edu">my old portfolio</a>
+  <div id="master-container">
+    
+    <div id="name-container">
+
+      <img src="./img/menuname.png" class="menunameimg">
+    </div>
+
+    <div id="overlay-container">
+    
+    
+      <div id="menu-container-high" class="menu menu-container menu-hidden menu-index">
+        <a onclick="startPageTransition('./projects.html')" id="m1-index">
+          <img src="./img/menu1.png" class="menuimg menuimgindex">
+        </a>
+        <a onclick="startPageTransition('./resume.html')" id="m2-index">
+          <img src="./img/menu2.png" class="menuimg menuimgindex">
+        </a>
+        <a onclick="startPageTransition('./about.html')" id="m3-index">
+          <img src="./img/menu3.png" class="menuimg menuimgindex">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/tryingtryiing/" id="m4-index">
+          <img src="./img/menu4.png" class="menuimg menuimgindex">
+        </a>
+      </div>
+      <div id="menu-container-low" class="menu menu-container menu-index">
+        <a onclick="startPageTransition('./projects.html')" id="m1-index">
+          <img src="./img/menu1.png" class="menuimg menuimgindex">
+        </a>
+        <a onclick="startPageTransition('./resume.html')" id="m2-index">
+          <img src="./img/menu2.png" class="menuimg menuimgindex">
+        </a>
+        <a onclick="startPageTransition('./about.html')" id="m3-index">
+          <img src="./img/menu3.png" class="menuimg menuimgindex">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/tryingtryiing/" id="m4-index">
+          <img src="./img/menu4.png" class="menuimg menuimgindex">
+        </a>
+      </div>
+    </div>
+
+    <div id="scroll-container">
+
+      <div id="channels">
+        <div id="channel1" class="" onclick="goToChannel()">
+        </div>
+        <div id="channel2" class="" onclick="goToChannel()">
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
 
 </body>

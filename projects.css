@@ -1,0 +1,48 @@
+/* :root {
+    --diego-blue: rgb(8, 0, 255);
+    --diego-bg: rgb(246, 246, 243);
+    --diego-black: rgb(37, 37, 46);
+    --menu-height: .6em;
+    --main-width: 84vw;
+    --main-margin: 0 8vw;
+    --col2: 33.87%;
+    --col3: 67.9%;
+    --colGap: calc(2% + 10px);
+
+    --paragraphFontSize: 20px;
+} */
+#content {
+    width: calc(var(--main-width)*102/100);
+    margin: var(--main-margin);
+    text-align: left;
+    top: auto;
+}
+.project-box {
+    /* width: calc( 33% * 100/102); */
+    width:  calc(var(--main-width) * .324 * 102/100);
+    height: calc(var(--main-width) * .324 * 102/100);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    cursor: zoom-in;
+    background-color: var(--diego-blue);
+    margin-top:calc( .4% * 100/102);
+    margin-right:calc( .7% * 100/102);
+}
+.project-box img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: zoom-in;
+}
+/* 
+.project-box p{
+    display: block;
+    margin: 0;
+    margin-top: -1%;
+    padding: 0;
+    font-family: "Calling-Italic";
+    font-size: 1.3vw;
+    cursor: zoom-in;
+    width:fit-content;
+} */

@@ -1,0 +1,88 @@
+:root {
+    --base-font-size: .8em
+}
+
+
+h1 {
+    font-size: 1.3em;
+    margin: 0;
+    font-family: "Calling-Bold";
+    padding-top: 0;
+    margin-top: calc(2*var(--base-font-size));
+    margin-bottom: calc(-.3*var(--base-font-size));
+    color:  var(--diego-blue);
+    letter-spacing: -.035em;
+}
+h2,h3,p {
+    font-size: var(--base-font-size);
+    font-weight: 100;
+}
+h2 {
+    margin: 0;
+    font-family: "Calling-Bold";
+    margin-top: var(--base-font-size);
+}
+h3 {
+    margin: 0;
+    font-family: "Calling-Italic";
+    opacity: .4;
+    font-weight: 100;
+    line-height: 140%;
+}
+p {
+    margin: 0;
+    margin-top: .4em;
+    font-family: "Calling";
+}
+
+
+#content{
+    width: var(--main-width);
+    margin: var(--main-margin);
+    height: auto;
+    position: relative;
+}
+#resume-content{
+    position: relative;
+    height: auto;
+    min-height: 200px;
+    width: var(--main-width);
+}
+
+#img-column, #text-column {
+    position: absolute;
+    margin-top: 0;
+    text-align: left;
+    height: auto;
+}
+
+
+
+
+.first {
+    margin-bottom: calc(.26*var(--base-font-size));
+}
+strong {
+    font-family: "Calling-Bold";
+    font-weight: bolder;
+}
+#resume-header {
+    /* margin-top: 5em; */
+    text-align: left;
+    display: relative;
+}
+h4{
+    font-size: 3em;
+    margin: 0;
+    font-family: "Calling-Bold";
+    letter-spacing: -.07em;
+    /* color: var(--diego-blue); */
+    margin-left: -.087em;
+    line-height: .8em;
+}
+h5 {
+    font-size: calc(1*var(--base-font-size));
+    margin: 0;
+    /* margin-top: -.5em; */
+    font-weight: 200;
+}
