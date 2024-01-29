@@ -8,30 +8,26 @@
   
 <div id="overlay-container">
 
-    <!-- <div id="name-container">
-        <img id="name1" class="nameSVG" src="./svg/name1.svg">
-        <img id="name2" class="nameSVG" src="./svg/name2.svg">
-    </div> -->
+    <div id="mob-menu-logo" class="mobile-show menu menu-container">
+        <img src="./img/menuname-mob.png"  onclick="startPageTransition('./')" id="m0" class="menuimg">
+    </div>
 
-    <div id="menu-container-high" class="menu menu-container">
-        <a onclick="startPageTransition('./')" id="m0">
-            <img src="./img/menuname.png" class="menuimg mobile-hidden">
-        </a>
-        <a onclick="startPageTransition('./')" id="m0">
-            <img src="./img/menuname-mob.png" class="menuimg mobile-show">
-        </a>
-        <a onclick="startPageTransition('./projects.html')" id="m1">
-            <img src="./img/menu1.png" class="menuimg">
-        </a>
-        <a onclick="startPageTransition('./resume.html')" id="m2">
-            <img src="./img/menu2.png" class="menuimg">
-        </a>
-        <a onclick="startPageTransition('./about.html')" id="m3" >
-            <img src="./img/menu3.png" class="menuimg">
-        </a>
-        <a target="_blank" href="https://www.instagram.com/tryingtryiing/" id="m4">
-            <img src="./img/menu4.png" class="menuimg">
-        </a>
+    <div id="menu-container-high" class="menu not-index-scroll menu-container">
+        <div>
+            <img src="./img/menuname.png" onclick="startPageTransition('./')" id="m0" class="menuimg mobile-hidden">
+        </div>
+        <div>
+            <img src="./img/menu1.png"  onclick="startPageTransition('./projects.html')" id="m1" class="menuimg">
+        </div>
+        <div>
+            <img src="./img/menu2.png" onclick="startPageTransition('./resume.html')" id="m2" class="menuimg">
+        </div>
+        <div>
+            <img src="./img/menu3.png" onclick="startPageTransition('./about.html')" id="m3" class="menuimg">
+        </div>
+        <div>
+            <img src="./img/menu4.png" target="_blank" href="https://www.instagram.com/tryingtryiing/" id="m4" class="menuimg">
+        </div>
         
     </div>
 </div>

@@ -70,6 +70,8 @@
 h1 { /* PROJECT TITLE    */
     margin: 0;
     padding-top: 15vh;
+    font-weight: normal;
+    font-family: "Calling-Bold";
 }
 .blend-darken{
     mix-blend-mode: darken;
@@ -157,7 +159,8 @@ h1 { /* PROJECT TITLE    */
     margin-top: 15vh;
     /* padding-top: 10vh; */
     text-align: left;
-  }
+    font-size: var(--paragraphFontSize);
+}
 #about-right-column {
     /* background-color: rgba(9, 255, 0, 0.65); */
     left: 51%;
@@ -172,7 +175,7 @@ h1 { /* PROJECT TITLE    */
 }
 
 
-@media (max-width:1200px){
+@media (orientation:portrait) and (max-width:1200px){
 
     #text-column, #img-column {
         display: block;
@@ -201,6 +204,6 @@ h1 { /* PROJECT TITLE    */
         height: auto;
     }
     #about-left-column {
-        margin-top: 5em;
+        margin-top: 20vh;
     }
 }

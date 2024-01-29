@@ -25,7 +25,6 @@
     padding: 0;
     margin: 0;
     cursor: zoom-in;
-    background-color: var(--diego-blue);
     margin-top: .4vw;
     margin-right: .8vw;
 }
@@ -37,7 +36,7 @@
 }
 
 
-@media screen and (max-width: 1200px){
+@media screen and (orientation:portrait) and (max-width:1200px){
     .project-box {
         /* width: calc( 33% * 100/102); */
         width:  calc(var(--main-width) * .49);
