@@ -17,6 +17,8 @@
     --menuimg-ht: 2.2vh;
     
     --paragraphFontSize: 16px;
+
+    --smallBreakpoint: 1200px;
 }
 
 
@@ -150,9 +152,6 @@ a:hover {
   transition: font-family 1s linear;
   cursor: pointer;
 }
-.menu a:hover{
-  font-family: "Calling-Italic";
-}
 #m0{
   position: absolute;
   left: 0;  
@@ -253,14 +252,11 @@ a:hover {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(17, 255, 21); 
+  background-color: var(--diego-bg); 
   background-image: none;
   background-size: cover;
   background-position: center;
   z-index: 8;
-}
-#channel2 {
-  background-color: rgb(17, 81, 255); 
 }
 .hidden {
   display: none;
@@ -431,43 +427,47 @@ p span a{
   height: 5em;
 }
 
+.mobile-show {
+  display: none;
+  visibility: hidden;   
+}
 
 /* FOR SMALL SCREENS */
-@media (max-width:1030px){
-  
-  #container {
-  padding-top: 14vh;
-  }
-  #logo-container {
-  width: 97%;
-  padding: 1.5%
-  }
-
-  .text1 {
-  padding: 0 2%;
-  font-size: 5.6em; 
-  font-weight: bold;
-  /* text-decoration: none; */
-  color: white;
-  margin: .2em 0;
-  }
-  .text2 {
-  font-size: 3.4em;
-  font-weight: normal;
-  /* text-decoration: none; */
-  color: white;
-  }
-  .paragraph {
-  font-size: 2.2em;
-  padding: 0 5%;
+@media (max-width:1200px){
+  :root {
+    --menu-height: 0.8em;
+    --main-width: 92vw;
+    --main-margin: 0 4vw;
+    
+    
+    --menuimg-ht: 3.3vh;
+    
+    --paragraphFontSize: 34px;
   }
 
-  .monogram {
-    padding:15em;
-    height: 15vw;
+  .menu-container {
+    text-align: right;
+    margin-top: 1em;
   }
-  .gapDiv{
-    height: 10em;
+  .menu a{
+    height: auto;
+    display: block;
+    margin-top: .5em;
+    margin-bottom: 0;
+  }
+  #m0 {
+    height: 5em;
+  }
+  #m0 img{
+    height: 5em;
+  }
+  .mobile-show {
+    display: block;
+    visibility: visible;  
+  }
+  .mobile-hidden {
+    display: none;
+    visibility: hidden;   
   }
 
 }

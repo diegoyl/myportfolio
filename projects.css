@@ -19,15 +19,15 @@
 }
 .project-box {
     /* width: calc( 33% * 100/102); */
-    width:  calc(var(--main-width) * .324 * 102/100);
-    height: calc(var(--main-width) * .324 * 102/100);
+    width:  calc(var(--main-width) * .328);
+    height: calc(var(--main-width) * .328);
     display: inline-block;
     padding: 0;
     margin: 0;
     cursor: zoom-in;
     background-color: var(--diego-blue);
-    margin-top:calc( .4% * 100/102);
-    margin-right:calc( .7% * 100/102);
+    margin-top: .4vw;
+    margin-right: .8vw;
 }
 .project-box img{
     width: 100%;
@@ -35,14 +35,15 @@
     padding: 0;
     cursor: zoom-in;
 }
-/* 
-.project-box p{
-    display: block;
-    margin: 0;
-    margin-top: -1%;
-    padding: 0;
-    font-family: "Calling-Italic";
-    font-size: 1.3vw;
-    cursor: zoom-in;
-    width:fit-content;
-} */
+
+
+@media screen and (max-width: 1200px){
+    .project-box {
+        /* width: calc( 33% * 100/102); */
+        width:  calc(var(--main-width) * .49);
+        height: calc(var(--main-width) * .49);
+        margin-top: .9vw;
+        margin-bottom: 0;
+        margin-right: 1.8vw;
+    }
+}
