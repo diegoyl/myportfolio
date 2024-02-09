@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AI Experiments</title>
+  <meta name="description" content="portfolio site">
+  <link rel="icon" href="./img/icon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project.css">
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/content.js"></script>
+  <script src="./js/include.js"></script>
+  <script src="./js/universal.js"></script>
+</head>
+
+<div class="transition is-active"></div>
+
+<body onload="setup()"> 
+  <div id="master-container">
+    
+    <!-- INCLUDE -->
+    <div id="overlay-div"></div>
+
+    <!-- TOP BUFFER -->
+    <div class="topBuffer"></div>
+
+    
+    <!-- CONTENT -->
+    <div id="content">
+        <!-- TEXT -->
+        <div id="text-column">
+          <h1>AI Experiments</h1>
+
+          <p>
+            Learned about different AI tools and ways to use them creatively. Also learned about different types of machine learning models and how to train them.
+          </p>
+          
+          <!-- <p class="infoHead"></p> -->
+          <p class="info">4.s00 - Design Intelligence</p>
+          <p class="info info2">Spring 2022</p>
+        </div>
+
+        <!-- IMAGES -->
+        <div id="img-column">
+          <h2 class="alignLeft">Generative Music Video</h2>
+          <p class="alignLeft">
+            Short animation I made for a class exercise. 
+            I used VQGAN+CLIP to generate videos using the album cover and keywords as input. Then I synced the videos to the music in Premiere.          
+            <br><br>
+            Song: Why Are Sundays So Depressing by The Strokes
+          </p>
+          <iframe src="https://www.youtube.com/embed/GqlpFMEHclQ?si=zIsQdsI_nJdK0iLB" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="aspect-ratio: 1;"
+              class="video-tight"
+          ></iframe>
+
+          <div style="height:2em"></div>
+
+          <h2 class="alignLeft">Monogram Stamp</h2>
+          <p class="alignLeft">
+            We were exploring variational auto-encoders and training our own models with datasets that we generated. I trained mine on my handwriting, only using the letters from my full name. After training the model I had it generate new "letters" based on my handwriting. Since the results are a gradient space I used them to create a morphing animation. I then picked one of the images that I liked and I used it to create an old-fashioned stamp, like the ones used for wax seals. I turned the image into a 3D surface in Rhino, using the pixel value as a height parameter and then smoothing it out since the image is very low-res. Then I 3D-printed a small disc with a negative of the generated surface. To create a seal I attached the disc to a large screw, which had also provided the necessary weight for stamping. The wax is made from melted crayons, which allowed me to mix colors.
+          </p>
+          <img src="./img/project/ai/seal1.jpeg">
+          <div class="imgRow2">
+            <img src="./img/project/ai/seal2.jpeg"
+            ><img src="./img/project/ai/seal3.jpeg">
+          </div>
+          <div class="imgRow2">
+            <img class="darken" src="./img/project/ai/anim.gif"
+            ><img class="darken" src="./img/project/ai/still.png">
+          </div>
+
+          <div class="imgRow3">
+            <img style="aspect-ratio:1;" src="./img/project/ai/3dprint.png"
+            ><img src="./img/project/ai/process1.png"
+            ><img src="./img/project/ai/process2.png">
+          </div>          
+
+        </div>
+
+
+
+            
+
+      <!-- BOTTOM BUFFER -->
+      <div class="bottomBuffer"></div>
+
+    </div> <!-- CONTENT -->
+
+
+  </div> <!-- MASTER -->
+</body>
+
+
+
+</html>

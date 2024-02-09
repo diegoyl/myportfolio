@@ -100,7 +100,7 @@ body {
 #name-container {
   /* background-color: #0cffff; */
   position: fixed;
-  bottom: 50vh;
+  bottom: 48vh;
   font-size: 0;
   width: var(--main-width);
   padding: 0;
@@ -167,6 +167,7 @@ body {
 }
 .menuimgindex{
   height: 3vh;
+  z-index: 100;
   cursor: pointer;
 }
 #m1-index{left: 0; margin-left:0}
@@ -187,7 +188,7 @@ body {
   transition: transform 1s ease-in-out 50ms;
 }
 #menu-container-high {
-  top: .8em;
+  top: 1.2em;
   pointer-events: none;
 }
 .menu-hidden {
@@ -413,6 +414,16 @@ body {
   display: none;
   visibility: hidden;   
 }
+.difference {
+  /* filter: brightness(0%) invert(100%); */
+  mix-blend-mode: difference;
+}
+.white-filter {
+  filter: brightness(0%) invert(100%);
+  filter: invert(100%);
+  /* filter: brightness(200%) invert(100%); */
+}
+
 
 /* FOR SMALL SCREENS */
 @media (orientation:portrait) and (max-width:1200px){
@@ -489,4 +500,10 @@ body {
   .topBuffer {
     height: 20vh;
   }
+
+
+  #name-container {
+    /* margin-bottom: 8vh; */
+  }
+  
 }

@@ -67,13 +67,21 @@
     margin: 10% .5%;
     display: block;
 }
+#img-column .video-tight {    
+    width: 100%;
+    margin: 0;
+}
 h1 { /* PROJECT TITLE    */
     margin: 0;
     padding-top: 15vh;
     font-weight: normal;
     font-family: "Calling-Bold";
 }
-.blend-darken{
+h2 {
+    font-size: 1.8em;
+    margin: .3em 0;
+}
+.darken{
     mix-blend-mode: darken;
 }
 

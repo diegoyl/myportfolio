@@ -27,7 +27,7 @@ function index_setup(){ // onload
     let maxScrollHeight = window.innerHeight + indexScrollLength * channelData.length
     $("#scroll-container").css("height", maxScrollHeight);
     $("#name-container").css("transform", "translateY(0)");
-    $("#channels").css("transform", "translateY(95vh)");
+    $("#channels").css("transform", "translateY(92vh)");
     $("#channels").css("transition", "transform .6s ease-in-out 220ms");
     
     preloadChannels();
@@ -62,6 +62,12 @@ function setCSS() {
         $("#iOver").css("transform", "translateX(234.3%) translateY(642%)");
 
 
+        $("#overlay-container").addClass("difference");
+        $(".menuimgindex").addClass("white-filter");
+        $("#name-container").addClass("difference");
+        $("#name-container").addClass("white-filter");
+
+
         $("#idot").css("top", "2.8vw");
         $("#channels").css("transform", "translateY(0)");
         $("#menu-container-low").css("transform", "translateY(20vh)");
@@ -78,9 +84,13 @@ function setCSS() {
         $("#iOver").css("transform", "translateX(234.3%) translateY(242%)");
         // $("#tilde").css("fill", "var(--diego-blue)");
 
+        $("#overlay-container").removeClass("difference");
+        $(".menuimgindex").removeClass("white-filter");
+        $("#name-container").removeClass("difference");
+        $("#name-container").removeClass("white-filter");
 
         $("#idot").css("top", "7.6vw");
-        $("#channels").css("transform", "translateY(95vh)");
+        $("#channels").css("transform", "translateY(92vh)");
         $("#menu-container-low").css("transform", "translateY(0)");
         $("#menu-container-high").css("transform", "translateY(-15vh)");
         $("#intro").css("transition", "opacity .5s ease-out .7s");

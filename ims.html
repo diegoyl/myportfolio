@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IMS</title>
+  <meta name="description" content="portfolio site">
+  <link rel="icon" href="./img/icon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project.css">
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/content.js"></script>
+  <script src="./js/include.js"></script>
+  <script src="./js/universal.js"></script>
+</head>
+
+<div class="transition is-active"></div>
+
+<body onload="setup()"> 
+  <div id="master-container">
+    
+    <!-- INCLUDE -->
+    <div id="overlay-div"></div>
+
+    <!-- TOP BUFFER -->
+    <div class="topBuffer"></div>
+
+    
+    <!-- CONTENT -->
+    <div id="content">
+        <!-- TEXT -->
+        <div id="text-column">
+          <h1>Interactive Music Systems</h1>
+
+          <p>
+            A collection of experiments I made during the IMS class. We used python to code and generate audio and Kivy for the graphics.
+            <br><br>
+            Audio is pretty bad since it's recorded from my laptop speakers, which are slightly broken. Hopefully I can figure out how to embed the projects here so they can be used.
+          </p>
+          
+          <!-- <p class="infoHead"></p> -->
+          <p class="info">21M.385 - Interactive Music Systems</p>
+          <p class="info info2">Fall 2023</p>
+        </div>
+
+        <!-- IMAGES -->
+        <div id="img-column">
+
+            <h2 class="alignLeft">PAC-MAN Guitar Hero 🤯</h2>
+            <iframe src="https://www.youtube.com/embed/jV6iQ3Ivnvw " frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                style="aspect-ratio: 16/10;"
+                class="video-tight"
+            ></iframe>
+            <p class="alignLeft">
+                During this week, we remade a simple version of Guitar Hero and had to put our own spin on it.
+                I realized pacman graphics fit pretty well with guitar hero. For the gems I used something similar to the dots that pacman eats and the buttons are all pacman heads that are eating the gems if you hit them at the right time. I also wanted the GH streak mode to mimic when pacman eats a cherry and starts eating the ghosts. Unfortunately I ran into some problems and ran out of time so i was not able to turn the gems into ghosts. Instead, when you hit a cherry gem, the gems all turn blue and the points for each one are multiplied by 2. I also wanted to make the cherry appear after you hit a streak of ten, but again ran into issues/out of time so I just placed the cherries in 3 random spots when initializing the gems. Once you miss a note the cherry mode will deactivate.
+            </p>
+
+            <div style="height:2em"></div>
+            
+
+            <h2 class="alignLeft">Harp</h2>
+            <iframe src="https://www.youtube.com/embed/s5fwpmmf6f8" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                style="aspect-ratio: 16/10;"
+                class="video-tight"
+            ></iframe>
+            <p class="alignLeft">
+                During this week, we played around with a Leap Motion sensor that can track your hand and finger position! I tried to create a system that mimics a harp as closely as possible.
+                I thought it was kinda basic at first, but it was actually pretty fun trying to figure out how to do this. For the sound of the strings I used a very staccato sine wave (to mimic the initial pluck sound) stacked on top of a quieter but longer sine wave (to mimic the ringing of the string). I also messed around with stacking triangle waves and different decays and even tremolo, but it started to sound very crunchy and I decided to move on due to time constraints. 
+                <br>
+                <br>
+                I was also somewhat inspired by traditional Mexican music, which sometimes uses the harp. Some of this music tends to have a lot of thirds in the harmonies so each string plays a note from C Major and also the third above it. I chose to only have 8 strings since having more would make the gaps between them too narrow for the leap system which isn't super accurate for something like this. But to mimic the full range of the harp you can go up or down an octave if you pluck it higher or lower in the y-axis.
+                <br>
+                <br>
+                Finally, I added a simple bass line that I know from a mariachi song and since I didn't have time to add interactive buttons, I thought a fun way to activate it would be to strum very quickly since that's something that I see harp players to sometimes as a flourish.
+            </p>
+
+
+            <div style="height:2em"></div>
+            
+
+            <h2 class="alignLeft">Trumpet Solo Arpeggiator</h2>
+            <iframe src="https://www.youtube.com/embed/20my5ZChzpI" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                style="aspect-ratio: 16/10;"
+                class="video-tight"
+            ></iframe>
+            <p class="alignLeft">
+                During this week, we learned how to make arpeggiators with a note scheduler! 
+                I used to play trumpet and some of my favorite trumpet 
+                solos come from salsa songs, so I wanted to create something 
+                similar to that type of sound. The backing track loops chords that I took from Ditto by NewJeans and I also added some salsa sounding percussion. 
+                The arpegiator used the midi trumpet sound 
+                and follows a simple mapping of pitch on the x axis and note
+                speed on the y axis. For the pitch I limited it to playing 
+                arpeggios based on the backing chords along with a couple of extra 
+                notes to make it more interesting. By moving left and right 
+                you can play these notes in three different octaves. The graphics 
+                for this one were pretty simple as there is just a ripple going on 
+                in the background that matches the rhythm of the chords and for the 
+                arpegiator it's size is related to the note length and the shape 
+                changes based on the pitch. I limited it to 8 different shapes since 
+                each arpeggio won't span much more than that. 
+            </p>
+            
+            <div style="height:2em"></div>
+             
+            <h2 class="alignLeft">Plinko</h2>
+            <iframe src="https://www.youtube.com/embed/oLu3DUvy_74" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                style="aspect-ratio: 16/10;"
+                class="video-tight"
+            ></iframe>
+            <p class="alignLeft">
+                During this week, we learned how to animate collisions and also 
+                make keyframe animations. My system is based on the plinko carnival game. When a ball reaches the bottom 
+                it lands on one of eight pads and plays a note. Each pad has an assigned 
+                pitch, but the ball's color will determine the wave type of the 
+                generated note. The ball changes color/waveshape each time it bounces on the white 
+                circles. The system is pretty chaotic/random so I could definetely 
+                work on adding things that make it more musically pleasing, but I 
+                wanted to focus more on getting the graphics and physics working corretly. 
+            </p>
+
+        </div>
+
+
+
+            
+
+      <!-- BOTTOM BUFFER -->
+      <div class="bottomBuffer"></div>
+
+    </div> <!-- CONTENT -->
+
+
+  </div> <!-- MASTER -->
+</body>
+
+
+
+</html>
