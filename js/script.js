@@ -5,13 +5,14 @@ let channelData = [
     ['./img/project/drift/thumb.jpg', "drift"],
     ['./img/project/pendulum/thumb.jpg', "pendulum"],
     ['./img/project/clock/thumb.jpg', "clock"],
+    ['./img/project/squish/thumb.jpg', "squish"],
     ['./img/project/chair/thumb.jpg', "chair"],
     ['./img/project/mask/thumb.jpg', "mask"],
-    ['./img/project/music-video/thumb.jpg', "music-video"],
+    ['./img/project/ai/thumb.jpg', "ai"],
+    ['./img/project/footwork/thumb.jpg', "footwork"],
     ['./img/project/tactical-type/thumb-w.jpg', "projects"],
     ['./img/project/honest-type/thumb.jpg', "honest-type"],
-    ['./img/project/pecan-sans/thumb.jpg', "pecan-sans"],
-    ['./img/project/adobe-home/thumb.jpg', "adobe-home"],
+    ['./img/project/forting/thumb.jpg', "forting"],
     ['./img/project/birth-certificate/thumb.jpg', "projects"],
     ['./img/project/infinite/thumb.jpg', "infinite"]
 ]
