@@ -146,7 +146,9 @@ body {
   transition: font-family 1s linear;
   cursor: pointer;
   cursor: url("./img/magnify.png") 30 25,auto;
-
+}
+.menu a{
+  cursor: url("./img/magnify.png") 30 25,auto;
 }
 #m0{
   height: 100%;
