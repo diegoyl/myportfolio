@@ -10,8 +10,20 @@
     aspect-ratio: 1/.1473;
     transition: transform 1s cubic-bezier(.77,0,.18,1) 80ms;
     /* transform: translateY(50vh); */
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
+
+#text-column strong {
+    font-family: "Calling-Bold";
+    line-height: 1.5em;
+    font-size: larger;
+    /* color: var(--diego-blue); */
+}
+#img-column strong {
+    font-family: "Calling-Bold";
+    line-height: 1.5em;
+}
+
 .nameSVG {
     position: fixed;
     display: block;
@@ -37,6 +49,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  letter-spacing: .015em;
+
 
 }
 #text-column {
@@ -51,7 +65,26 @@
   /* margin-bottom: 10vh; */
   text-align: left;
   font-size: var(--paragraphFontSize);
+  line-height: 1.12em;
 }
+.skools-container {
+    width: 100%;
+    margin-top: 2em;
+}
+.skools {
+    /* background-color: yellow; */
+    width: 38%;
+    display: inline-block;
+    vertical-align: top;
+}
+#skills{
+    margin-right: 1em;
+}
+
+.caption {
+    color: var(--diego-gray);
+}
+
 #img-column img {
     width: 99%;
     margin: .5% .5%;
@@ -73,10 +106,15 @@
 }
 h1 { /* PROJECT TITLE    */
     margin: 0;
-    padding-top: 15vh;
+    padding-top: 13vh;
+    /* margin-bottom: 1em; */
     font-weight: normal;
     font-family: "Calling-Bold";
+    /* white-space: nowrap; */
+    font-size: 3em;
+    line-height: .95em;
 }
+
 h2 {
     font-size: 1.8em;
     margin: .3em 0;
@@ -107,7 +145,7 @@ h2 {
     left: var(--col2);
     top: 0;
     width: calc(100% - var(--col2));
-    margin-top: 15vh;
+    margin-top: 12.6vh;
     min-height: 100vh;
 }
 

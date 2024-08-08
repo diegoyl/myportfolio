@@ -14,6 +14,7 @@
   <script src="./js/content.js"></script>
   <script src="./js/include.js"></script>
   <script src="./js/universal.js"></script>
+  <script src="./js/projects.js"></script>
 </head>
 
 <div class="transition is-active"></div>
@@ -29,72 +30,99 @@
     
     <!-- CONTENT -->
     <div id="content">
+        <div id="category-bar">
+            <a onclick="changeCategory('c-all')" id="c-all" class="categ category-active">All</a>
+            <a onclick="changeCategory('c-phy')" id="c-phy" class="categ" >Physical</a>
+            <a onclick="changeCategory('c-int')" id="c-int" class="categ">Interaction</a>
+            <a onclick="changeCategory('c-web')" id="c-web" class="categ">Digital</a>
+            <a onclick="changeCategory('c-gd')" id="c-gd" class="categ">Graphic Design</a>
+        </div>
         <!-- IMG COLUMNS -->
-        <div class="project-box">
+        <div class="project-box c-phy c-int">
             <img onclick="startPageTransition('./clock.html')"
             src="./img/project/clock/thumb.jpg">
         </div><!--
-        --><div class="project-box">
-            <img onclick="startPageTransition('./ims.html')" 
-            src="./img/project/ims/thumb.jpg">
+        --><div class="project-box c-phy c-int">
+            <img onclick="startPageTransition('./squish.html')" 
+            src="./img/project/squish/thumb.jpg">
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-phy c-int">
+            <img onclick="startPageTransition('./forting.html')"
+            src="./img/project/forting/thumb.jpg">
+        </div><!--
+        --><div class="project-box c-gd">
+            <img onclick="startPageTransition('./footwork.html')" 
+            src="./img/project/footwork/thumb.png">
+        </div><!--
+        --><div class="project-box c-gd">
+            <img onclick="startPageTransition('./infinite-merch.html')" 
+            src="./img/project/infinite-merch/thumb.jpg">
+        </div><!--
+        --><div class="project-box c-phy c-int">
+            <img onclick="startPageTransition('./tangible-sampling.html')" 
+            src="./img/project/tangible-sampling/thumb.jpg">
+        </div><!--
+        --><div class="project-box c-phy">
             <img onclick="startPageTransition('./chair.html')"
             src="./img/project/chair/thumb.jpg">
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-int c-web">
+            <img onclick="startPageTransition('./beatfarm.html')" 
+            src="./img/project/beatfarm/thumb.jpg">
+        </div><!--
+        --><div class="project-box c-phy">
             <img onclick="startPageTransition('./mask.html')"
             src="./img/project/mask/thumb.jpg">
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-int c-web">
+            <img onclick="startPageTransition('./ims.html')" 
+            src="./img/project/ims/thumb.jpg">
+        </div><!--
+        --><div class="project-box c-phy c-web">
             <img onclick="startPageTransition('./ai.html')"
             src="./img/project/ai/thumb.jpg">
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-gd">
             <a target="_blank" href="https://diegoyl.github.io/tactical-type/">
               <img src="./img/project/tactical-type/thumb.jpg">
             </a>
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-gd">
             <img onclick="startPageTransition('./honest-type.html')" 
             src="./img/project/honest-type/thumb.jpg">
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-web">
             <img onclick="startPageTransition('./adobe-home.html')" 
             src="./img/project/adobe-home/thumb.jpg">
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-web c-int">
             <a target="_blank" href="https://diegoyl.github.io/4110/">
                 <img src="./img/project/birth-certificate/thumb.jpg">
             </a>
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-gd">
             <img onclick="startPageTransition('./pecan-sans.html')" 
             src="./img/project/pecan-sans/thumb.jpg">
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-gd">
             <img onclick="startPageTransition('./drift.html')" 
             src="./img/project/drift/thumb.jpg">
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-phy">
             <img onclick="startPageTransition('./futbot.html')" 
             src="./img/project/2007/thumb.jpg">
         </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-phy">
             <img onclick="startPageTransition('./pendulum.html')" 
             src="./img/project/pendulum/thumb.jpg">
         </div><!--
-        --><div class="project-box">
-            <img onclick="startPageTransition('./light.html')" 
-            src="./img/project/light/thumb.jpg">
-        </div><!--
-        --><div class="project-box">
+        --><div class="project-box c-gd">
             <img onclick="startPageTransition('./infinite.html')" 
             src="./img/project/infinite/thumb.jpg">
         </div><!--
-        --><div class="project-box">
-            <img onclick="startPageTransition('./infinite-merch.html')" 
-            src="./img/project/infinite-merch/thumb.jpg">
+        --><div class="project-box c-phy">
+            <img onclick="startPageTransition('./light.html')" 
+            src="./img/project/light/thumb.jpg">
         </div><!--
         --><div class="project-box">
             <img onclick="startPageTransition('./pedals.html')" 

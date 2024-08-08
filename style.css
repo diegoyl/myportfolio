@@ -1,6 +1,6 @@
 :root {
-    --diego-blue: rgb(0, 47, 255);
-    /* --diego-blue: rgb(8, 0, 255); */
+    --diego-blue: rgb(0, 66, 255);
+    --diego-gray:rgb(161, 162, 164);
     --diego-bg: rgb(246, 246, 243);
     --diego-black: rgb(36, 36, 52);
     --menu-height: 2vw;
@@ -69,7 +69,7 @@ html {
     padding: 0;
     margin: 0;
     color: var(--diego-black);
-    cursor: url("./img/cursor.png"),auto;
+    /* cursor: url("./img/cursor.png"),auto; */
 }
 
 body {
@@ -145,6 +145,8 @@ body {
   /* margin-right: 19vw; */
   transition: font-family 1s linear;
   cursor: pointer;
+  cursor: url("./img/magnify.png") 30 25,auto;
+
 }
 #m0{
   height: 100%;
@@ -169,6 +171,8 @@ body {
   height: 3vh;
   z-index: 100;
   cursor: pointer;
+  cursor: url("./img/magnify.png") 30 25,auto;
+
 }
 #m1-index{left: 0; margin-left:0}
 #m2-index{left: 0; margin-left:var(--col2)}
@@ -206,6 +210,9 @@ body {
   font-family: "Calling-Italic";
   /* font-weight: bolder; */
 }
+.italic {
+  font-family: "Calling-Italic";
+}
 #scroll-container {
   width: 100%;
   height: 100vh;
@@ -237,6 +244,8 @@ body {
   background-position: center;
   z-index: 7;
   cursor: zoom-in;
+  cursor: url("./img/magnify.png") 30 25,auto;
+
 }
 #channel1, #channel2 {
   position: fixed;
@@ -346,6 +355,10 @@ body {
 /* EXTRAS ******************************************/
 
 
+#content a {
+  cursor: url("./img/magnify.png") 30 25,auto;
+}
+
 #container {
   margin-top: 20vw;
   padding-top: 20vh;
@@ -416,14 +429,13 @@ body {
 }
 .difference {
   /* filter: brightness(0%) invert(100%); */
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 .white-filter {
-  filter: brightness(0%) invert(100%);
-  filter: invert(100%);
+  /* filter: brightness(0%) invert(100%); */
+  /* filter: invert(100%); */
   /* filter: brightness(200%) invert(100%); */
 }
-
 
 /* FOR SMALL SCREENS */
 @media (orientation:portrait) and (max-width:1200px){
@@ -453,6 +465,7 @@ body {
   }
   #mob-menu-logo img{
     cursor: pointer;
+    cursor: url("./img/magnify.png") 30 25,auto;
     height: 10vw;
   }
   .not-index-scroll {
