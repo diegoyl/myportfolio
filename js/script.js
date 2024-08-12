@@ -20,6 +20,10 @@ let channelData = [
 //***************************************************************************
 
 
+
+
+
+
 function index_setup(){ // onload
     console.log('onloading')
     window.scrollTo(0, 0);
