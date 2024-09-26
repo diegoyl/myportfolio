@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-diegoyl.com
+https://www.diegoyl.com
 
 This is the second version I built, I used the first one to learn how to code websites so it was pretty jank. This one was also built pretty early in my coding journey and I wanna make the next version in React. 
 
