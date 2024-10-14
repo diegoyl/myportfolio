@@ -439,6 +439,15 @@ body {
   /* filter: brightness(200%) invert(100%); */
 }
 
+#slides-container {
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  height: 100vh;
+  width: 100vw;
+
+}
+
 /* FOR SMALL SCREENS */
 @media (orientation:portrait) and (max-width:1200px){
   :root {
@@ -521,4 +530,10 @@ body {
     /* margin-bottom: 8vh; */
   }
   
+
+  #slides-container {
+    position: fixed;
+    left: 0;
+    top: 130px;
+  }
 }
